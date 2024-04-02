@@ -13,7 +13,7 @@ print("the data type of myList is ", type(myList))
 
 
 
-#
+# Output
 """
 [1, 2, 3, 4] This is the original list
 [1, 2, 3] last index value is removed
