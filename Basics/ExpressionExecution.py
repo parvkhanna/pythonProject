@@ -26,4 +26,39 @@ print(a+b*c)   # output   [  14  ]
 
 a,b = 10, 5.0
 c = a*b
-print(c)  
+print(type(c) , c)    # output  [  50.0  ]
+
+
+#  Result of division operator with 2 integers will be float
+
+a,b = 1,2
+c = a/b
+print(type(c) , c)
+
+
+#  Integer division with float and int will give int displayed as float
+
+a,b = 1.5,3
+d = a//b            # Just like in Maths , floor gives the closes integer, which is lesser than or equal to the float value.
+                    # Here 1.5//3 = 0.5, (// : "Integer division")  will update the output as floor value,
+                    # but will give the result as float value only
+e = a/b
+print(type(d), d , "Integer division || ", type(e) , e , "Normal division" )
+
+# Output : [  'float'> 0.0 Integer division ||  <class 'float'> 0.5 Normal division   ]
+
+
+c = -12//5   # -2.4 ==> -3
+d = 12//5    # 2.4  ==> 2
+print(type(c), c ,"and",  d, "Integer division")
+
+
+
+
+# Remainder is negative when denominator is negative
+
+c = 5%2
+print(c)
+
+c= 5%(-2)
+print(c)
